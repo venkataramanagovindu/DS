@@ -30,6 +30,9 @@ int main()
     cout << "output\n";
     Array arr(10);
     arr.Insert(0, 1);
+    arr.Insert(1, 1);
+    arr.Display();
+    arr.Delete(0);
     arr.Display();
     return 0;
 }
@@ -41,6 +44,7 @@ void Array::Display(){
     {
         cout<<A[i]<<" ";  
     }
+    cout << endl;
 }
 
 void Array::Insert(int index, int x){
@@ -58,7 +62,7 @@ void Array::Insert(int index, int x){
 int Array::Delete(int index){
     int temp = 0;
 
-    if(index > 0 && index < length){
+    if(index >= 0 && index < length){
         for(int i = index; i < length - 1; i++){
             A[i] = A[i+1];
         }
