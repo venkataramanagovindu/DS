@@ -41,19 +41,15 @@ int main()
    int len = *(&arr + 1) - arr;
    cout << "The length of the array is: " << len;
     //sum of n natural nubers n(n+1)/2
-    int expectedVal = (len + 1  * (len + 1 + 1))/2;
+    int expectedVal = ((len + 1)  * (len + 1 + 1))/2;
     int count = 0;
     for(int i = 0; i < len; i++)
     {
         count += arr[i];
     }
     cout << endl;
-    cout << "formula " << expectedVal;
-    cout << endl;
-    cout << "array count";
-    cout << count;
-    cout << endl;
-    cout << expectedVal ;
+    cout << "issing number" << endl;
+    cout << expectedVal - count;
 
     
 
