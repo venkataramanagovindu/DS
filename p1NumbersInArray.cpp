@@ -55,7 +55,7 @@ int main()
     cout << endl;
 
     // :: Find missing eleents of N natural nubers Starting from any number :: //
-    int arr2[10] = {5, 6, 7, 8, 9, 10, 12, 13, 14, 15};
+    int arr2[10] = {5, 6, 7, 8, 9, 10, 12, 14, 15, 16};
     int len2 = *(&arr2 + 1) - arr2;
     cout << "The length of the array is: " << len2;
     cout << endl;
@@ -68,6 +68,29 @@ int main()
             cout << "Missing element : " << i + diff;
             cout << endl;
             diff++;
+        }
+        
+    }
+
+    // :: Find missing elements (continuously >1 num missing ) of N natural nubers Starting from any number :: //
+    // :: Method 1
+    int arr3[10] = {15, 16, 17, 18, 19, 20, 24, 28, 29, 30};
+    int len3 = *(&arr3 + 1) - arr3;
+    cout << "The length of the array is: " << len3;
+    cout << endl;
+    int lower1 = arr3[0];
+    int diff1 = lower1 - 0;
+    for(int i = 1; i < len2; i++)
+    {
+        if (arr3[i] - i != diff)
+        {
+            for (int j = diff1; j < arr3[i] - i; j++)
+            {
+                /* code */
+                cout << "Missing element : " << i + diff1;
+                cout << endl;
+                diff1++;
+            }
         }
         
     }
