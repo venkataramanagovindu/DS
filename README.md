@@ -8,7 +8,7 @@ g++ filename
 
 g++ first-array.cpp
 
-this will generate a.out fil, an executable file for the above cpp file
+this will generate a.out file, an executable file for the above cpp file
 
 then use  ./a.out to see the out put
 
