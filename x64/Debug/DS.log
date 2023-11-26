@@ -1,0 +1,6 @@
+﻿  p1NumbersInArray.cpp
+C:\Projects\Learn\CPP\DS\p1NumbersInArray.cpp(30,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Projects\Learn\CPP\DS\p1NumbersInArray.cpp(42,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Projects\Learn\CPP\DS\p1NumbersInArray.cpp(59,14): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Projects\Learn\CPP\DS\p1NumbersInArray.cpp(78,14): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  DS.vcxproj -> C:\Projects\Learn\CPP\DS\x64\Debug\DS.exe
